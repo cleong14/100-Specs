@@ -109,7 +109,12 @@ var princess_leia = {
  *   jsonformatter.curiousconcept.com => "104.28.5.70"
  *
  */
-
+var domains = {
+	"ycombinator.com": "198.41.190.47",
+	"laughingsquid.com": "162.159.247.97",
+	"slumlordhosting.com": "198.61.179.126",
+	"jsonformatter.curiousconcept.com": "104.28.5.70"
+};
 
 /* Step 12
  *
@@ -124,7 +129,14 @@ var princess_leia = {
  *   Konqueror  => "konqueror.org"
  *
  */
-
+var browsers = {
+	Chromium: "google.com",
+	Safari: "apple.com",
+	Opera: "opera.com",
+	Firefox: "mozilla.org",
+	Sleipnir: "fenrir-inc.com",
+	Konqueror: "konqueror.org"
+};
 
 /* Step 13
  *
@@ -142,7 +154,18 @@ var princess_leia = {
  *  isDouble  => true
  *
  */
-
+var rainbow = {
+	colors: {
+		red: "#F0280A",
+		orange: "#FF8800",
+		yellow: "#FFDD00",
+		green: "#51AB0C",
+		blue: "#1593ED",
+		indigo: "#5215ED",
+		violet: "#A915ED"
+	},
+	isDouble: true
+};
 
 /* Step 14
  *
@@ -157,7 +180,7 @@ var princess_leia = {
  * "Bieber Linux"
  *
  */
-
+var linuxFlavors = ['Gentoo', 'Fedora', 'Debian', 'Slackware', 'Red Hat', 'Bieber Linux'];
 
 /* Step 15
  *
@@ -171,7 +194,7 @@ var princess_leia = {
  * "cytosine"
  *
  */
-
+var DNA = ['nucleatides', 'guanine', 'adenine', 'thymine', 'cytosine'];
 
 /* Step 16
  *
@@ -184,7 +207,12 @@ var princess_leia = {
  * Surface      => 320
  *
  */
-
+var laptopCosts = {
+	MacBook: 1500,
+	Alienware: 2500,
+	HP: 499,
+	Surface: 320
+};
 
 /* Step 17
  *
@@ -200,7 +228,7 @@ var princess_leia = {
  * "Species"
  *
  */
-
+var livingOrganismClassification = ['Kingdom', 'Phylum', 'Class', 'Order', 'Family', 'Genus', 'Species'];
 
 /* Step 18
  *
@@ -214,7 +242,7 @@ var princess_leia = {
  * "cvs"
  *
  */
-
+var scmList = ['git', 'svn', 'mercurial', 'bazaar', 'cvs'];
 
 /* Step 19
  *
@@ -233,7 +261,14 @@ var princess_leia = {
  *                  "Golden"
  *
  */
-
+var beers = {
+    IPA: 'Ale',
+    Lager: 'Strong',
+    Heffeweisen: 'German',
+    Stout: ['Thick', 'Dark'],
+    Porter: 'Bitter',
+    Ale: ['Light', 'Golden']
+};
 
 /* Step 20
  *
@@ -243,7 +278,11 @@ var princess_leia = {
  * @return {String}
  *
  */
+function sahara_river () {
+    return 'Nile River';
+}
 
+sahara_river();
 
 /* Step 21
  *
@@ -255,7 +294,10 @@ var princess_leia = {
  * @return {Number}
  *
  */
-
+function addNumbers (num1, num2) {
+    var sum = num1 + num2;
+    return sum;
+}
 
 /* Step 22
  *
@@ -268,7 +310,13 @@ var princess_leia = {
  * @return {Bool}
  *
  */
-
+function installLinux (linuxType) {
+    if (linuxFlavors.indexOf(linuxType) !== -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 /* Step 23
  *
