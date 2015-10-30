@@ -335,7 +335,17 @@ function installLinux (linuxType) {
  * @return {Bool when False, String when True}
  *
  */
-
+function drink (beerType) {
+  if (!beers[beerType]) {
+    return false;
+  } else if (typeof beers[beerType] === 'string') {
+    return 'This ' + beerType + ' is ' + beers[beerType] + '.';
+  } else {
+    if (typeof beers[beerType] === 'object') {
+    return 'This ' + beerType + ' is ' + beers[beerType][0] + ' and ' + beers[beerType][1] + '.';
+  }
+}
+}
 
 /* Step 24
  *
@@ -348,7 +358,13 @@ function installLinux (linuxType) {
  * @return {String if true else return false}
  *
  */
-
+function browseURL (browserType) {
+  if (!browsers[browserType]) {
+    return false;
+  } else {
+    return browsers[browserType];
+  }
+}
 
 /* Step 25
  *
@@ -359,7 +375,19 @@ function installLinux (linuxType) {
  * @return {String}
  *
  */
+function listLivingOrgClass () {
+  var unorderedList = document.createElement('ul');
 
+  for (var i = 0; i < livingOrganismClassification.length; i++) {
+    var currentOrganism = livingOrganismClassification[i];
+    
+    var newItem = document.createElement('li');
+    newItem.innerHTML = currentOrganism;
+
+    unorderedList.appendChild(newItem);
+  }
+  return unorderedList.outerHTML;
+}
 
 /* Step 26
  *
