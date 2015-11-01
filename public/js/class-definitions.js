@@ -409,15 +409,16 @@ function listLivingOrgClass () {
  *
  */
 function favoritePlanet (currentPlanet) {
-  if (currentPlanet !== planets) {
-    return currentPlanet + ' is not a planet!';
-  } else {
+  for (var i = 0; i < planets.length; i++) {
+    
+  if (currentPlanet === planets[i]) {
     var randomPlanet = planets[Math.floor(Math.random()*planets.length)];
+
     return "I'm from " + currentPlanet + ", but I wish I could go to " + randomPlanet + ".";
+  }  
   }
+  return currentPlanet + ' is not a planet!';
 }
-console.log(favoritePlanet("Mercury"));
-// why you no work?! ^^^
 
 /* Step 27
  *
